@@ -16,6 +16,12 @@ shell for convenience and speed.
 - jq
 - An OpenAI API key
 
+## Usage
+
+1. Install `shellmind` and bind it to a key
+2. Type a pseudo-code command in your shell
+3. Press your assigned key to replace the pseudo-code with a real command
+
 ## Installation
 
 First, make sure to set the environment variable `OPENAI_API_KEY` to a valid
@@ -34,12 +40,41 @@ OpenAI API key.
         # ...
 
         # For Ctrl-X:
-        bind \cx 'shellmind_replace'
+        bind \cx 'shellmind'
 
         # For Ctrl-X in insert mode when using Vi mode:
-        bind -M insert \cx 'shellmind_replace'
+        bind -M insert \cx 'shellmind'
     end
     ```
 
-### Bash: TODO
-### Zsh: TODO
+### Bash
+
+1. Put the `shellmind.bash` file from this repo into a directory of your choice.
+   You may edit that file for some optional configuration options.
+
+   ```bash
+   source /path/to/shellmind.bash
+   ```
+
+2. Add a keybind to your `.bashrc`:
+   ```bash
+   # For Ctrl-G
+   bind -x '"\C-g": shellmind'
+   ```
+
+### Zsh
+
+1. Put the `shellmind.zsh` file from this repo into a directory of your choice.
+   You may edit that file for some optional configuration options.
+
+2. Source the file in your `.zshrc`:
+    ```bash
+    source /path/to/shellmind.zsh
+    ```
+
+3. Add a [keybind](https://zsh.sourceforge.io/Doc/Release/Zsh-Line-Editor.html#Key-Bindings) to your `.zshrc`:
+    ```bash
+    # For Ctrl-G:
+    zle -N shellmind
+    bindkey '^G' shellmind
+    ```
