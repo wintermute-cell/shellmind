@@ -11,7 +11,7 @@ shell for convenience and speed.
 
 ## Requirements
 
-- Fish shell
+- Fish, Zsh or Bash shell
 - curl
 - jq
 - An OpenAI API key
