@@ -1,7 +1,7 @@
-# shellmind
+# shellmind 🧠
 
-A shell plugin that uses GPT to convert natural language or pseudo-code into
-actual shell commands. It is not just a cli llm client, but integrates into the
+A shell plugin that uses an llm to convert natural language or pseudo-code into
+actual shell commands. It is not just an llm client, but integrates into the
 shell for convenience and speed.
 
 ![demo gif](./.github/demo.gif)
@@ -24,9 +24,9 @@ OpenAI API key.
 ### Fish
 
 1. Put the `shellmind.fish` file from this repo into `.config/fish/functions/`.
-   Edit this file for some optional configuration options.
+   You may edit that file for some optional configuration options.
 
-2. Add a [keybind](TODO) to `.config/fish/functions/fish_user_key_bindings.fish`:
+2. Add a [keybind](https://fishshell.com/docs/current/cmds/bind.html) to `.config/fish/functions/fish_user_key_bindings.fish`:
     ```fish
     function fish_user_key_bindings
         # ...
