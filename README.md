@@ -18,7 +18,7 @@ shell for convenience and speed.
 
 ## Usage
 
-1. Install `shellmind` and bind it to a key
+1. [Install `shellmind` and bind it to a key](#installation)
 2. Type a pseudo-code command in your shell
 3. Press your assigned key to replace the pseudo-code with a real command
 
