@@ -33,6 +33,7 @@ OpenAI API key.
    You may edit that file for some optional configuration options.
 
 2. Add a [keybind](https://fishshell.com/docs/current/cmds/bind.html) to `.config/fish/functions/fish_user_key_bindings.fish`:
+
     ```fish
     function fish_user_key_bindings
         # ...
@@ -52,11 +53,14 @@ OpenAI API key.
 1. Put the `shellmind.bash` file from this repo into a directory of your choice.
    You may edit that file for some optional configuration options.
 
+2. Source the file in your `.bashrc`:
+
    ```bash
    source /path/to/shellmind.bash
    ```
 
-2. Add a keybind to your `.bashrc`:
+3. Add a keybind to your `.bashrc`:
+
    ```bash
    # For Ctrl-G
    bind -x '"\C-g": shellmind'
@@ -68,11 +72,13 @@ OpenAI API key.
    You may edit that file for some optional configuration options.
 
 2. Source the file in your `.zshrc`:
+
     ```bash
     source /path/to/shellmind.zsh
     ```
 
 3. Add a [keybind](https://zsh.sourceforge.io/Doc/Release/Zsh-Line-Editor.html#Key-Bindings) to your `.zshrc`:
+
     ```bash
     # For Ctrl-G:
     zle -N shellmind
