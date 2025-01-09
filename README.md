@@ -7,7 +7,6 @@ shell for convenience and speed.
 ![demo gif](./.github/demo.gif)
 
 - (For now limited to OpenAI, open an issue to request other providers.)
-- (For now limited to Fish, open an issue to request other shells.)
 
 ## Requirements
 
